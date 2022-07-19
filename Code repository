@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    n = int(input())
+
+def getvail(n):
+    
+        lit = []
+        while n != 0:
+            t = n -1
+            v = t*t
+            lit.append(v)
+            n = n -1
+        return lit
+    
+val = getvail(n)
+val2 = val[::-1]
+
+for i in val2:
+    print(i)
+            
