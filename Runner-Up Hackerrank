@@ -1,0 +1,21 @@
+arr = [57,57,-57,57]
+
+val = []
+for i in arr:
+    if i > -100:
+        val.append(i)
+            
+m = -len(val)
+v = val[0]
+for j in range(m,0):
+    if val[j] > v:
+        v = val[j]
+t = []
+for k in range(m,0):
+    if val[k] < v:
+        t.append(val[k])
+q = -len(t)        
+ran = t[0]        
+for h in range(q, 0):
+    if t[h] > ran:
+        ran = t[h]
