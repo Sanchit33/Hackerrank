@@ -1,0 +1,23 @@
+t = sorted(marks)    
+    t22 = []
+    for i in range(len(marks)):
+        if marks[i] > t[0]:
+            t22.append(marks[i])
+    t222 = sorted(t22)
+    t2 = t222
+    t3 = []
+    for j in range(len(t2)):
+        if t2[j] == t2[0]:
+            t3.append(t2[j])
+    t4 = []
+    for k in range(len(marks)):
+        if marks[k] == t3[0]:
+            t4.append(k)
+    so = []        
+    for kk in t4:
+        so.append(students[kk])
+    soo = sorted(so)    
+        
+    for yy in soo:
+        print(yy)    
+        
