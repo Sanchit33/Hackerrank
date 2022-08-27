@@ -1,0 +1,24 @@
+if __name__ == '__main__':
+    N = int(input())
+    
+    
+    
+    lis = []
+    for i in range(N):
+        s = input()
+        ss = s.split()
+        if ss[0] == "insert":
+            lis.insert(int(ss[1]),int(ss[2]))     
+        elif ss[0] == "remove":
+            lis.remove(int(ss[1]))
+        elif ss[0] == "append":
+            lis.append(int(ss[1]))
+        elif ss[0] == "sort":
+            lis.sort()
+        elif ss[0] == "pop":
+            lis.pop()
+        elif ss[0] == "reverse":
+            lis.reverse()
+        elif ss[0] == "print":
+            print(lis)    
+                              
