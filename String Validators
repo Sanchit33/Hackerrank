@@ -1,0 +1,58 @@
+if __name__ == '__main__':
+    s = raw_input()
+    def alphanum(s):
+        c = True
+        for i in range(0,len(s)):
+            if s[i].isalnum() == True:
+                c = True
+                break
+            elif s[i].isalnum() != True:
+                c = False       
+        return c        
+    def alpha(s):
+        c = True
+        for i in range(0,len(s)):
+            if s[i].isalpha() == True:
+                c = True
+                break
+            elif s[i].isalpha() != True:
+                c = False
+        return c        
+            
+    def digit(s):
+        c = True
+        for i in range(0,len(s)):
+            if s[i].isdigit() == True:
+                c = True
+                break
+            elif s[i].isdigit() != True:
+                c = False
+        return c        
+                
+            
+    def lower(s):
+        c = True
+        for i in range(0,len(s)):
+            if s[i].islower() == True:
+                c = True
+                break
+            elif s[i].islower() != True:
+                c = False
+        return c    
+            
+    def upper(s):
+        c = True
+        for i in range(0,len(s)):
+            if s[i].isupper() == True:
+                c = True
+                break
+            elif s[i].isupper() != True:
+                c = False
+        return c        
+                
+            
+print(alphanum(s))
+print(alpha(s))
+print(digit(s))
+print(lower(s))
+print(upper(s))
