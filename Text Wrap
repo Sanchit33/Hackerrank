@@ -1,0 +1,19 @@
+num = len(string)//max_width +1
+    lis = []
+    lo = 0
+    for i in range(num):
+        if i == num :
+            lis.append(string[lo+max_width:max_width +2 ])
+            lis.append('\n')
+            
+        else:
+            lis.append(string[lo:max_width])
+            lis.append('\n')
+                
+            
+        lo = max_width
+        max_width = max_width +4    
+        
+    
+    
+    return "".join(lis)
