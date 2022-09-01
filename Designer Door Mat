@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+c = input().split()
+v = int(c[0])
+b = int(c[1])
+q = "-"
+h = ".|."
+
+for i in range(1, v, 2):
+    print(str(i*h).center(b, q))
+print("WELCOME".center(b, q))    
+for i in range(v-2, -1, -2):
+    print(str(h*i).center(b, q))            
+        
