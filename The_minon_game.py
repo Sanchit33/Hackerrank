@@ -16,8 +16,8 @@ def minion_game(string):
     stuart = []
     kevin = []
     vol = "AEIOU"
-    for i in range(0, len(ui)-1):
-        if ui[i][:1] in vol:
+    for i in range(0, len(ui)):
+        if ui[i][:1] == "A" or ui[i][:1] == "E" or ui[i][:1] == "I" or ui[i][:1] == "O" or ui[i][:1] == "U":
             kevin.append(ui[i])
         else:
             stuart.append(ui[i]) 
@@ -47,4 +47,5 @@ def minion_game(string):
     else:
         p = "Stuart"
         s = sum(si)    
-        return print(p,s)        
+        return print(p,s)
+   
