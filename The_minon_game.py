@@ -1,3 +1,4 @@
+#without optimization
 def minion_game(string):
     # your code goes here
     scount = {}
@@ -48,4 +49,27 @@ def minion_game(string):
         p = "Stuart"
         s = sum(si)    
         return print(p,s)
+    
+    
+    
+    
+    
+#With Optimization
+def minion_game(string):
+    # your code goes here
+   s1  = 0
+   s2 = 0
+   vow = 'AEIOU'
+   for i in range(0,len(s)):
+        if s[i] in vow:
+            s1 = s1 + len(s[i:])
+        else:
+             s2 = s2 + len(s[i:])
+   if s1 > s2:
+        print("Kevin", s1)
+   elif s1 < s2:
+        print("Stuart", s2)
+   else:
+        print("Draw")             
+    
    
